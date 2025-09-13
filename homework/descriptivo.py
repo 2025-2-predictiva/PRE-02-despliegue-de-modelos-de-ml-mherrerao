@@ -16,4 +16,8 @@ features = df[
 
 target = df[["price"]]
 
-## Data wrangler
+features.bathrooms.value_counts().sort_index().plot(kind="bar")
+
+features.sqft_living.plot(kind="hist", edgecolor="white", bins=20)
+
+target.plot(kind="hist", edgecolor="white", bins=10)
